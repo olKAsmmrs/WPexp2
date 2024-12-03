@@ -1,0 +1,114 @@
+/* 基本样式 */
+body {
+  /* 微软雅黑，如无则用Arial */
+  font-family: "Microsoft YaHei", Arial, sans-serif;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* 定义类 */
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+.centered {
+  text-align: center;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+
+/* 标题样式 */
+h1 {
+  font-size: 65px;
+  /* 下间距 */
+  margin-bottom: 40px;
+}
+
+/* 内容段落样式 */
+#content p {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  margin: 15px 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#content p span {
+  opacity: 0;
+  display: inline-block;
+  animation: reveal 0.1s forwards;
+  animation-delay: calc(0.02s * var(--i)); /* 使用自定义的 CSS 变量控制每个字符的显示延迟 */
+}
+
+/* 逐个显示的动画 */
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* 调整 warning 的上下边距 */
+#warning {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#warning p {
+  text-align: center;
+  margin: 15px 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#warning.blinking p {
+  animation: blink 0.8s step-start infinite; /* 每0.5秒闪烁一次，循环无限 */
+}
+
+#ensuring0 p {
+  margin: 15px 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+#ensuring1 p {
+  margin: 15px 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+#ensuring2 p {
+  margin: 15px 0;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+/* 闪烁提示文字样式 */
+#click-to-continue {
+  margin-top: 20px;
+  font-size: 25px;
+  animation: blink 2s infinite; /* 闪烁效果 */
+  position: absolute;
+  bottom: 20px; /* 确保它出现在页面底部 */
+  left: 50%;
+  transform: translateX(-50%); /* 水平居中 */
+}
+
+/* 闪烁效果的关键帧动画 */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
