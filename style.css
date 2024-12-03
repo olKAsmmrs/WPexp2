@@ -2,7 +2,7 @@
 body {
   /* 微软雅黑，如无则用Arial */
   font-family: "Microsoft YaHei", Arial, sans-serif;
-  font-size: 50px;
+  font-size: 30px;
   background-color: black;
   color: white;
   margin: 0;
@@ -27,7 +27,7 @@ body {
 
 /* 标题样式 */
 h1 {
-  font-size: 65px;
+  font-size: 45px;
   /* 下间距 */
   margin-bottom: 40px;
 }
@@ -37,7 +37,7 @@ h1 {
   display: block;
   opacity: 0;
   visibility: hidden;
-  margin: 15px 0;
+  margin: 10px 0;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -62,12 +62,12 @@ h1 {
 
 /* 调整 warning 的上下边距 */
 #warning {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 #warning p {
   text-align: center;
-  margin: 15px 0;
+  margin: 10px 0;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -77,17 +77,17 @@ h1 {
 }
 
 #ensuring0 p {
-  margin: 15px 0;
+  margin: 10px 0;
   padding-left: 60px;
   padding-right: 60px;
 }
 #ensuring1 p {
-  margin: 15px 0;
+  margin: 10px 0;
   padding-left: 60px;
   padding-right: 60px;
 }
 #ensuring2 p {
-  margin: 15px 0;
+  margin: 10px 0;
   padding-left: 60px;
   padding-right: 60px;
 }
@@ -95,7 +95,7 @@ h1 {
 /* 闪烁提示文字样式 */
 #click-to-continue {
   margin-top: 20px;
-  font-size: 25px;
+  font-size: 20px;
   animation: blink 2s infinite; /* 闪烁效果 */
   position: absolute;
   bottom: 20px; /* 确保它出现在页面底部 */
